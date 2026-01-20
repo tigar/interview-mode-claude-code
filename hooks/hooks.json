@@ -1,0 +1,14 @@
+{
+  "PreToolUse": [
+    {
+      "tools": ["Write", "Edit"],
+      "hooks": [
+        {
+          "type": "command",
+          "command": "${CLAUDE_PLUGIN_ROOT}/hooks/pre-implementation.sh",
+          "args": ["${TOOL_NAME}"]
+        }
+      ]
+    }
+  ]
+}
